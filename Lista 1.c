@@ -257,6 +257,14 @@ void questao_5 (){
     int v_misturado[] = {5, -4, 3, -2, -1};
     int v_repetido[] = {3, 1, 3, 2, 3};
 
+    printf("\n====Vetores orginais====\n");
+    printf("Vetor vazio: [ ]\n");
+    printf("Vetor unitario: [2]\n");
+    printf("Vetor positivo e negativo: [5, -4, 3, -2, -1]\n");
+    printf("Vetor repetido: [3, 1, 3, 2, 3]\n");
+
+    printf("\n\n====Vetores após ordenção====\n");
+    
     printf("\nVetor vazio\n");
     bubbleSortOrdem(v_vazio, n0, 1);
     imprimeVet(v_vazio, n0);
@@ -280,9 +288,8 @@ void questao_5 (){
     printf("\nVetor repetido (decrescente)\n");
     bubbleSortOrdem(v_repetido, n, -1);
     imprimeVet(v_repetido, n);
-
-
-    printf("\n\n");
+    
+    printf("\n");
 }
 
 
