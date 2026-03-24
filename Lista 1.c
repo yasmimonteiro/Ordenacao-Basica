@@ -1,7 +1,7 @@
 #include<stdio.h>
 #include<stdlib.h>
 
-//FUNÇÃO PARA MOSTRAR VETOR
+//FUNÃ‡ÃƒO PARA MOSTRAR VETOR
 void imprimeVet (int v[], int n){
     int i;
 
@@ -13,7 +13,7 @@ void imprimeVet (int v[], int n){
 
 
 
-//QUESTÃO 1
+//QUESTÃƒO 1
 void bubbleSort (int v[], int n) {
     int i, j, temp;
 
@@ -43,7 +43,7 @@ void questao_1 () {
 
 
 
-//QUESTÃO 2
+//QUESTÃƒO 2
 void bubbleSortInstrumentado (int v[], int n){
     int i, j, temp;
     int trocas = 0, comparacoes = 0;
@@ -60,7 +60,7 @@ void bubbleSortInstrumentado (int v[], int n){
             }
         }
     }
-    printf("\nComparações: %d\n", comparacoes);
+    printf("\nComparaÃ§Ãµes: %d\n", comparacoes);
     printf("Trocas: %d\n", trocas);
 }
 
@@ -79,7 +79,7 @@ void questao_2(){
 
 
 
-//QUESTÃO 3
+//QUESTÃƒO 3
 void bubbleSortOptimizado (int v[], int n) {
     int i, j, temp, houveTroca;
     int trocas = 0, comparacoes = 0;
@@ -102,7 +102,7 @@ void bubbleSortOptimizado (int v[], int n) {
         }
     }
 
-    printf("\nComparações: %d\n", comparacoes);
+    printf("\nComparaÃ§Ãµes: %d\n", comparacoes);
     printf("Trocas: %d\n", trocas);
 }
 //Usar a flag melhora o desempenho pois, se o vetor ja estiver ordenado (melhor caso),
@@ -123,7 +123,7 @@ void questao_3(){
 
 
 
-//QUESTÃO 4
+//QUESTÃƒO 4
 void vetores_bubbleSortNormal (){
     int n2 = 20, i;
     int v_ordenado[n2];
@@ -157,7 +157,7 @@ void vetores_bubbleSortNormal (){
 
     printf("\n\n");
 
-    printf("==== VETOR ALEATÓRIO ====\n");
+    printf("==== VETOR ALEATÃ“RIO ====\n");
     printf("Vetor original:\n");
     imprimeVet (v_aleatorio , n2);
 
@@ -202,7 +202,7 @@ void vetores_bubbleSortEarlyStop (){
 
     printf("\n\n");
 
-    printf("==== VETOR ALEATÓRIO ====\n");
+    printf("==== VETOR ALEATÃ“RIO ====\n");
     printf("Vetor original:\n");
     imprimeVet (v_aleatorio , n2);
 
@@ -222,7 +222,7 @@ void questao_4 (){
 
 
 
-//QUESTÃO 5
+//QUESTÃƒO 5
 void bubbleSortOrdem (int v[], int n, int ordem) {
     int i, j, temp;
 
@@ -252,8 +252,6 @@ void bubbleSortOrdem (int v[], int n, int ordem) {
 
 void questao_5 (){
     int n = 5, n0 = 0, n1 = 1;
-    int v[] = {5, 3, 2, 4, 1};
-    int u[] = {1, 2, 3, 4, 5};
     int v_vazio[] = {};
     int v_um[] = {2};
     int v_misturado[] = {5, -4, 3, -2, -1};
@@ -289,7 +287,7 @@ void questao_5 (){
 
 
 
-//QUESTÃO 6
+//QUESTÃƒO 6
 void selectionSort (int *V, int n) {
     int i, j, menor, temp;
 
@@ -321,21 +319,21 @@ void questao_6(){
 
 
 
-//QUESTÃO 7
+//QUESTÃƒO 7
 void questao_7 (){
-    printf("\nSelection Sort ('*' indica o menor elemento a ser trocado de posição em cada iteração, ignorando o que já foi ordenado)\n");
+    printf("\nSelection Sort ('*' indica o menor elemento a ser trocado de posiÃ§Ã£o em cada iteraÃ§Ã£o, ignorando o que jÃ¡ foi ordenado)\n");
     printf("\nVetor original [64, 25, 12, 22, 11]\n\n");
 
-    printf("(i = 0) Iteração 1: [64, 25, 12, 22, 11*]  => [11, 25, 12, 22, 64]\n");
-    printf("(i = 1) Iteração 2: [11, 25, 12*, 22, 64]  => [11, 12, 25, 22, 64]\n");
-    printf("(i = 2) Iteração 3: [11, 12, 25, 22*, 64]  => [11, 12, 22, 25, 64]\n");
-    printf("(i = 3) Iteração 4: [11, 12, 22, 25*, 64]  => [11, 12, 22, 25, 64]\n");
+    printf("(i = 0) IteraÃ§Ã£o 1: [64, 25, 12, 22, 11*]  => [11, 25, 12, 22, 64]\n");
+    printf("(i = 1) IteraÃ§Ã£o 2: [11, 25, 12*, 22, 64]  => [11, 12, 25, 22, 64]\n");
+    printf("(i = 2) IteraÃ§Ã£o 3: [11, 12, 25, 22*, 64]  => [11, 12, 22, 25, 64]\n");
+    printf("(i = 3) IteraÃ§Ã£o 4: [11, 12, 22, 25*, 64]  => [11, 12, 22, 25, 64]\n");
 
 }
 
 
 
-//QUESTÃO 8
+//QUESTÃƒO 8
 void selectionSortMetricas (int *V, int n) {
     int i, j, menor, temp;
     int comparacoes = 0, trocas = 0;
@@ -358,7 +356,7 @@ void selectionSortMetricas (int *V, int n) {
         }
     }
 
-    printf("\nComparações: %d\n", comparacoes);
+    printf("\nComparaÃ§Ãµes: %d\n", comparacoes);
     printf("Trocas: %d\n", trocas);
 }
 
@@ -388,17 +386,17 @@ void questao_8(){
 
 
 
-//QUESTÃO 9
+//QUESTÃƒO 9
 void questao_9(){
-    printf("\nNo Selection Sort, o fato de o vetor estar ordenado ou não, estar em ordem inversa ou aleatória,\n");
-    printf("não altera o número de comparações. O Selection Sort possui dois laços for que são independentes do\n");
-    printf("que está dentro do vetor na definição de quantas vezes vão rodar, ou seja, mesmo que todo o vetor já\n");
-    printf("esteja ordenado, o algoritmo ainda irá analisar elemento por elemento até achar o menor valor.\n");
+    printf("\nNo Selection Sort, o fato de o vetor estar ordenado ou nÃ£o, estar em ordem inversa ou aleatÃ³ria,\n");
+    printf("nÃ£o altera o nÃºmero de comparaÃ§Ãµes. O Selection Sort possui dois laÃ§os for que sÃ£o independentes do\n");
+    printf("que estÃ¡ dentro do vetor na definiÃ§Ã£o de quantas vezes vÃ£o rodar, ou seja, mesmo que todo o vetor jÃ¡\n");
+    printf("esteja ordenado, o algoritmo ainda irÃ¡ analisar elemento por elemento atÃ© achar o menor valor.\n");
 }
 
 
 
-//QUESTÃO 10
+//QUESTÃƒO 10
 void selectionSortOrdem (int *V, int n, int ordem) {
     int i, j, menor, temp;
 
@@ -452,7 +450,7 @@ void questao_10(){
 
 
 
-//QUESTÃO 11
+//QUESTÃƒO 11
 void insertionSort (int *V, int n) {
     int i, j, chave;
 
@@ -481,20 +479,20 @@ void questao_11(){
 
 
 
-//QUESTÃO 12
+//QUESTÃƒO 12
 void questao_12 (){
-    printf("\nInsertion Sort ('*' indica a 'chave' sendo inserida na parte ordenada à esquerda)\n");
+    printf("\nInsertion Sort ('*' indica a 'chave' sendo inserida na parte ordenada Ã  esquerda)\n");
     printf("\nVetor original [5, 3, 4, 1, 2]\n\n");
 
-    printf("(i = 1) Iteração 1: [5, 3*, 4, 1, 2]  => [3, 5, 4, 1, 2]\n");
-    printf("(i = 2) Iteração 2: [3, 5, 4*, 1, 2]  => [3, 4, 5, 1, 2]\n");
-    printf("(i = 3) Iteração 3: [3, 4, 5, 1*, 2]  => [1, 3, 4, 5, 2]\n");
-    printf("(i = 4) Iteração 4: [1, 3, 4, 5, 2*]  => [1, 2, 3, 4, 5]\n");
+    printf("(i = 1) IteraÃ§Ã£o 1: [5, 3*, 4, 1, 2]  => [3, 5, 4, 1, 2]\n");
+    printf("(i = 2) IteraÃ§Ã£o 2: [3, 5, 4*, 1, 2]  => [3, 4, 5, 1, 2]\n");
+    printf("(i = 3) IteraÃ§Ã£o 3: [3, 4, 5, 1*, 2]  => [1, 3, 4, 5, 2]\n");
+    printf("(i = 4) IteraÃ§Ã£o 4: [1, 3, 4, 5, 2*]  => [1, 2, 3, 4, 5]\n");
 }
 
 
 
-//QUESTÃO 13
+//QUESTÃƒO 13
 void insertionSortInstrumentado (int *V, int n) {
     int i, j, chave;
     int comparacoes = 0, movimentacoes = 0;
@@ -519,9 +517,9 @@ void insertionSortInstrumentado (int *V, int n) {
         movimentacoes++;
     }
 
-    printf("\nComparações = %d\n", comparacoes);
-    printf("Movimentações = %d\n", movimentacoes);
-    printf("\nVetor apos ordenação\n");
+    printf("\nComparaÃ§Ãµes = %d\n", comparacoes);
+    printf("MovimentaÃ§Ãµes = %d\n", movimentacoes);
+    printf("\nVetor apos ordenaÃ§Ã£o\n");
 
 }
 
@@ -553,7 +551,7 @@ void questao_13(){
 
     printf("\n\n");
 
-    printf("==== VETOR ALEATÓRIO ====\n");
+    printf("==== VETOR ALEATÃ“RIO ====\n");
     printf("Vetor original:\n");
     imprimeVet (v_aleatorio , n2);
     insertionSortInstrumentado(v_aleatorio, n2);
@@ -597,7 +595,7 @@ int main() {
     questao_6();
     printf("\n\n");
 
-    printf("\n============== QUESTAO 7 (Selection Sort Traçado) ==============\n");
+    printf("\n============== QUESTAO 7 (Selection Sort TraÃ§ado) ==============\n");
     questao_7();
     printf("\n\n");
 
@@ -619,7 +617,7 @@ int main() {
     questao_11();
     printf("\n\n");
 
-    printf("\n============== QUESTAO 12 (Insertion Sort Traçado) ==============\n");
+    printf("\n============== QUESTAO 12 (Insertion Sort TraÃ§ado) ==============\n");
     questao_12();
     printf("\n\n");
 
